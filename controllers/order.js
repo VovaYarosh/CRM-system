@@ -28,7 +28,7 @@ module.exports.getAll = async function (req,res) {
             .find(query)
             .sort({date: -1})
             .skip(+req.query.offset)
-            .limit(+req.query.limit)
+            .limit(+req.query.limit);
 
         res.status(200).json(orders)
     }catch (e) {
