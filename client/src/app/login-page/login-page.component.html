@@ -53,7 +53,7 @@
     <button
       class="modal-action btn waves-effect"
       type="submit"
-      [disabled]="form.invalid"
+      [disabled]="form.invalid || form.disabled"
     >
       Войти
     </button>
