@@ -19,9 +19,7 @@ export class LoginPageComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit(): void {
-    if (this.aSub) {
-      this.aSub.unsubscribe()
-    }
+
     this.form = new FormGroup({
         email: new FormControl(null, [
           Validators.required,
@@ -42,7 +40,9 @@ export class LoginPageComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(){
-    this.aSub.unsubscribe()
+    if (this.aSub) {
+      this.aSub.unsubscribe()
+    }
   }
 
   onSubmit(){
