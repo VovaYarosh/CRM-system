@@ -1,10 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {ActivatedRoute, Params} from "@angular/router";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {CategoriesService} from "../../shared/services/categories.service";
 import {switchMap} from "rxjs/operators";
 import {of} from "rxjs/internal/observable/of";
 import {MaterialService} from "../../shared/classes/material.service";
+import {Category} from "../../interface";
+import {error} from "selenium-webdriver";
 
 @Component({
   selector: 'app-categories-form',
@@ -12,8 +14,12 @@ import {MaterialService} from "../../shared/classes/material.service";
   styleUrls: ['./categories-form.component.css']
 })
 export class CategoriesFormComponent implements OnInit {
-  form: FormGroup
-  isNew = true
+  @ViewChild('input')inputRef: ElementRef;
+  form: FormGroup;
+  isNew = true;
+  image:File;
+  imagePreview;
+  category: Category;
   constructor(
     private route: ActivatedRoute,
     private categoriesService: CategoriesService
@@ -22,15 +28,15 @@ export class CategoriesFormComponent implements OnInit {
   ngOnInit(){
     this.form = new FormGroup({
       name: new FormControl(null, Validators.required)
-    })
+    });
 
-    this.form.disable()
+    this.form.disable();
     this.route.params
       .pipe(
         switchMap(
           (params: Params) => {
             if (params['id']){
-              this.isNew = false
+              this.isNew = false;
               return this.categoriesService.getById(params['id'])
             }
             return of(null)
@@ -38,11 +44,13 @@ export class CategoriesFormComponent implements OnInit {
         )
       )
       .subscribe(
-        category => {
+        (category: Category) => {
           if(category) {
+            this.category = category
             this.form.patchValue({
               name: category.name
-            })
+            });
+            this.imagePreview = category.imageSrc;
             MaterialService.updateTextInputs()
           }
           this.form.enable()
@@ -51,9 +59,39 @@ export class CategoriesFormComponent implements OnInit {
         )
   }
 
-
-  onSubmit(){
-
+  triggerClick() {
+    this.inputRef.nativeElement.click()
   }
 
+  onFileUpload(event: any) {
+    const file = event.target.files[0];
+    this.image = file;
+    const reader = new FileReader();
+    reader.onload = () => {
+      this.imagePreview = reader.result
+    };
+    reader.readAsDataURL(file)
+  }
+  onSubmit(){
+    let obs$
+    this.form.disable();
+    if(this.isNew){
+      // create
+      obs$ = this.categoriesService.create(this.form.value.name, this.image)
+    }else{
+      // update
+      obs$ = this.categoriesService.update(this.category._id,this.form.value.name, this.image)
+    }
+    obs$.subscribe(
+      category => {
+        this.category = category;
+        MaterialService.toast('changes saved');
+        this.form.enable()
+      },
+      error => {
+        MaterialService.toast(error.error.message);
+        this.form.enable()
+      }
+    )
+  }
 }
