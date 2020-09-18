@@ -55,13 +55,14 @@
     <button
       class="modal-action waves-effect waves-black btn-flat"
       (click)="cancel()"
+      [disabled]="pending"
     >
       Cancel
     </button>
     <button
       (click)="submit()"
       class="modal-action btn waves-effect"
-      [disabled]="order.list.length === 0"
+      [disabled]="order.list.length === 0 || pending"
     >
       Confirm
     </button>
