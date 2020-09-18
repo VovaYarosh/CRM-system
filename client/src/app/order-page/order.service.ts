@@ -1,15 +1,38 @@
 import {Injectable} from "@angular/core";
+import {OrderPosition, Position} from "../interface";
 
 @Injectable()
 
 export  class OrderService {
-  add(position){
 
+  public list: OrderPosition[] = [];
+  public price = 0;
+
+
+  add(position:Position){
+    const orderPosition = Object.assign({
+      name: position.name,
+      cost: position.cost,
+      quantity: position.quantity,
+      _id: position._id
+    });
+    const candidate = this.list.find(p =>  p._id === orderPosition._id);
+      if (candidate){
+        candidate.quantity += orderPosition.quantity
+      }else{
+        this.list.push(orderPosition)
+      }
+      this.computePrice()
   }
-  remove(){
-
+  remove(orderPosition: OrderPosition){
+    const idx = this.list.findIndex(p =>  p._id === orderPosition._id);
+    this.list.splice(idx, 1);
+    this.computePrice()
   }
   clear(){
 
+  }
+  private computePrice(){
+    this.price = this.list.reduce((total, item) => total += item.quantity * item.cost, 0)
   }
 }
