@@ -1,3 +1,4 @@
+import {DatePipe} from "@angular/common";
 
 export interface User {
   email: string,
@@ -36,4 +37,10 @@ export interface OrderPosition {
   cost: number
   quantity: number
   _id?: string
+}
+
+export interface Filter {
+  start?: Date
+  end?: Date
+  order?: number
 }
