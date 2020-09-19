@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Order} from "../../interface";
 
 @Component({
   selector: 'app-history-list',
@@ -6,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./history-list.component.css']
 })
 export class HistoryListComponent implements OnInit {
-
+  @Input() orders: Order[];
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }
