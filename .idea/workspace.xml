@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d468028c-b433-4164-81eb-f8d4ceb6a864" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/client/src/app/history-page/history-filter/history-filter.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/history-page/history-filter/history-filter.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/history-page/history-filter/history-filter.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/history-page/history-filter/history-filter.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/history-page/history-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/history-page/history-page.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/history-page/history-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/history-page/history-page.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/shared/classes/material.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/shared/classes/material.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,11 +16,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="history-filter.component.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="history-page.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/app/history-page/history-page.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="history-filter.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/app/history-page/history-filter/history-filter.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+            <state relative-caret-position="88">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
               <folding>
                 <element signature="e#0#119#0" expanded="true" />
               </folding>
@@ -42,11 +46,23 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="history-page.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/src/app/history-page/history-page.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="73" column="48" selection-start-line="73" selection-start-column="48" selection-end-line="73" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#97#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="history-filter.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/app/history-page/history-filter/history-filter.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+            <state relative-caret-position="159">
+              <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -105,11 +121,11 @@
         <option value="$PROJECT_DIR$/client/src/app/history-page/history-list/history-list.component.html" />
         <option value="$PROJECT_DIR$/client/src/app/history-page/history-list/history-list.component.ts" />
         <option value="$PROJECT_DIR$/client/src/app/interface.ts" />
-        <option value="$PROJECT_DIR$/client/src/app/history-page/history-page.component.html" />
-        <option value="$PROJECT_DIR$/client/src/app/history-page/history-page.component.ts" />
         <option value="$PROJECT_DIR$/client/src/app/shared/classes/material.service.ts" />
         <option value="$PROJECT_DIR$/client/src/app/history-page/history-filter/history-filter.component.html" />
         <option value="$PROJECT_DIR$/client/src/app/history-page/history-filter/history-filter.component.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/history-page/history-page.component.html" />
+        <option value="$PROJECT_DIR$/client/src/app/history-page/history-page.component.ts" />
       </list>
     </option>
   </component>
@@ -181,16 +197,7 @@
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CRM-system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CRM-system" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="history-page" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CRM-system" type="b2602c69:ProjectViewProjectNode" />
@@ -268,26 +275,25 @@
       <workItem from="1600365391005" duration="4152000" />
       <workItem from="1600400759581" duration="10124000" />
       <workItem from="1600449556852" duration="1745000" />
-      <workItem from="1600487448579" duration="6335000" />
+      <workItem from="1600487448579" duration="8087000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90115000" />
+    <option name="totallyTimeSpent" value="91867000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25297618" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25297618" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3607908" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3607908" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -643,23 +649,6 @@
     <entry file="file://$PROJECT_DIR$/client/src/app/history-page/history-page.component.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/app/history-page/history-page.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="64" column="4" lean-forward="true" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#97#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/app/history-page/history-page.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-725">
-          <caret line="3" column="48" lean-forward="true" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/app/shared/classes/material.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -669,17 +658,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/app/history-page/history-filter/history-filter.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        <state relative-caret-position="159">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/app/history-page/history-filter/history-filter.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+        <state relative-caret-position="88">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
           <folding>
             <element signature="e#0#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/history-page/history-page.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/history-page/history-page.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="73" column="48" selection-start-line="73" selection-start-column="48" selection-end-line="73" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#97#0" expanded="true" />
           </folding>
         </state>
       </provider>
