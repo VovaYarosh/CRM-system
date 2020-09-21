@@ -33,7 +33,7 @@
         type="password"
         [ngClass]="{'invalid': form.get('email').invalid && form.get('email').touched}"
       >
-      <label for="password">Пароль:</label>
+      <label for="password">Password:</label>
       <span
         class="helper-text red-text"
         *ngIf="form.get('password').invalid && form.get('email').touched"

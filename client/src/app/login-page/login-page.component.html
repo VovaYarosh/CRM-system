@@ -4,7 +4,7 @@
   (ngSubmit)="onSubmit()"
 >
   <div class="card-content">
-    <span class="card-title">Войти в систему</span>
+    <span class="card-title">Login</span>
     <div class="input-field">
       <input
         formControlName="email"
@@ -32,7 +32,7 @@
         type="password"
         [ngClass]="{'invalid': form.get('email').invalid && form.get('email').touched}"
       >
-      <label for="password">Пароль:</label>
+      <label for="password">password:</label>
       <span
         class="helper-text red-text"
         *ngIf="form.get('password').invalid && form.get('email').touched"
